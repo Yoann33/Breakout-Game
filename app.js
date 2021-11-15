@@ -188,6 +188,6 @@ function moveBall()
 }
 
 document.addEventListener('keydown',movePlayer)
-//setInterval(moveBall,6)
+setInterval(moveBall,6)
 addBlocks()
 positionPlayer()
