@@ -188,6 +188,15 @@ function moveBall()
 }
 
 document.addEventListener('keydown',movePlayer)
-setInterval(moveBall,6)
+var refresh = setInterval(function(){
+    if(Ball.X_Direction == 0)
+    {
+        clearInterval(refresh);
+    }
+    else
+    {
+        moveBall()
+    }
+},6)
 addBlocks()
 positionPlayer()
